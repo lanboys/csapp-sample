@@ -3,4 +3,6 @@ project(csapp_sample C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(csapp_sample main.c)
+include_directories(./code/include)
+
+add_executable(csapp_sample main.c ./code/src/csapp.c)
